@@ -1,0 +1,197 @@
+
+### Što je HTML
+
+HTML (HyperText Markup Language) je standardni jezik za izradu i oblikovanje web stranica. Služi za strukturu i sadržaj web stranica koristeći oznake (tagove) za definiranje različitih elemenata poput naslova, odlomaka, linkova, slika i drugih sadržaja.
+
+### Što je minifikacija i zašto je koristimo
+
+Minifikacija je proces uklanjanja nepotrebnih znakova iz izvornog koda, poput razmaka, novih redova, komentara i drugih nepotrebnih elemenata, bez promjene funkcionalnosti koda. Koristimo je kako bismo smanjili veličinu datoteka (npr. JavaScript, CSS) i tako poboljšali performanse web stranica smanjenjem vremena učitavanja.
+
+### Temelji pristupačnosti internetskih stranica, odnosno uloga HTML-a u toj pristupačnosti
+
+Pristupačnost internetskih stranica znači omogućiti svim korisnicima, uključujući one s invaliditetom, jednostavan pristup i korištenje web sadržaja. HTML igra ključnu ulogu u pristupačnosti putem:
+- **Semantičkog označavanja**: Korištenje semantičkih elemenata kao što su `<header>`, `<nav>`, `<main>`, `<footer>`, `<article>` i drugih omogućuje pomoćnim tehnologijama bolje razumijevanje i navigaciju po stranici.
+- **Alt atributa**: Korištenje `alt` atributa u slikama omogućuje opis slike za korisnike koji koriste čitače zaslona.
+- **Form labela**: Korištenje `<label>` elemenata povezanih s formama za lakše ispunjavanje za korisnike koji koriste pomoćne tehnologije.
+
+### Što je ECMAScript
+
+ECMAScript je standardizirani skriptni jezik na kojem se temelje JavaScript, JScript i ActionScript. Definira specifikacije jezika koje implementacije poput JavaScripta slijede.
+
+### Što je task runner
+
+Task runner je alat koji automatizira ponavljajuće zadatke u razvoju web aplikacija, poput minifikacije datoteka, kompilacije koda, optimizacije slika i testiranja. Primjeri task runnera uključuju Grunt i Gulp.
+
+### Razlika između `let` i `const` varijable
+
+- `let`: Definira varijablu koja može mijenjati vrijednost unutar bloka u kojem je deklarirana.
+- `const`: Definira varijablu čija vrijednost se ne može mijenjati nakon inicijalizacije, također unutar bloka.
+
+### Naredba za inicijalizaciju Gita
+
+```sh
+git init
+```
+
+### Ispravan način ubacivanja mixina
+
+Primjer ispravnog ubacivanja mixina u Sass:
+
+```scss
+@mixin example-mixin {
+  // stilovi mixina
+}
+
+.element {
+  @include example-mixin;
+}
+```
+
+### Element u koji ubacujemo `<title>`
+
+Element `<title>` se ubacuje unutar `<head>` elementa:
+
+```html
+<head>
+  <title>Naslov stranice</title>
+</head>
+```
+
+### Metoda koja nije za dohvaćanje elemenata u DOM-u
+
+Među navedenim metodama, npr. ako su metode `getElementById`, `querySelector`, `addEventListener`, ispravna metoda koja nije za dohvaćanje elemenata je `addEventListener`.
+
+### Kreiranje audio elementa sa URL-om i kontrolama zvuka
+
+```html
+<audio controls>
+  <source src="url-do-audio-datoteke.mp3" type="audio/mpeg">
+  Vaš preglednik ne podržava audio element.
+</audio>
+```
+
+### Primjer koji nije primjer svojstva HTML DOM-a
+
+Ako su ponuđeni primjeri svojstava poput `innerHTML`, `style`, `className`, a `click` je među njima, `click` nije svojstvo HTML DOM-a, već metoda.
+
+### Element s kojim ubacujemo linijski CSS
+
+Linijski CSS ubacujemo atributom `style`:
+
+```html
+<div style="color: red;"></div>
+```
+
+### Promjena boje linka kada prelazimo preko mišem
+
+Koristi se CSS pseudo-klasa `:hover`:
+
+```css
+a:hover {
+  color: blue;
+}
+```
+
+### Primjer koji nije petlja
+
+Ako su ponuđeni `for`, `while`, `do-while`, a `if` je među njima, `if` nije petlja.
+
+### Primjer koji nije ispravan identifikator varijabli
+
+Identifikator varijabli ne smije počinjati brojkom, ne smije koristiti specijalne znakove osim `_` i `$`, i mora biti jedinstven. Ako je primjer `1var` među ponuđenima, to nije ispravan identifikator.
+
+### Importiranje funkcije u SASS-u
+
+```scss
+@import 'path/to/file';
+```
+
+### Ispravan primjer varijable u SCSS-u
+
+```scss
+$primary-color: #333;
+```
+
+### Element za navigaciju
+
+Element `<nav>` koristimo za navigaciju.
+
+### Element za ubacivanje sadržaja nevezanog za sadržaj
+
+Element `<aside>` koristimo za ubacivanje sadržaja nevezanog za glavni sadržaj.
+
+### Element za ubacivanje uvodnog sadržaja
+
+Element `<header>` koristimo za ubacivanje uvodnog sadržaja.
+
+### Metoda koja ne pripada životnom ciklusu komponente
+
+Ako su metode `componentDidMount`, `componentDidUpdate`, `render`, a `getElementById` je među njima, `getElementById` ne pripada životnom ciklusu komponente.
+
+### True/False - JavaScript je objektno orijentirani jezik
+
+True.
+
+### True/False - JavaScript je funkcijski jezik
+
+True.
+
+### Što je Git
+
+Git je sustav za verzioniranje koda koji omogućuje praćenje promjena, suradnju među programerima i upravljanje različitim verzijama koda.
+
+### Što je repozitorij
+
+Repozitorij je mjesto gdje se pohranjuje i upravlja kodom, uključujući sve povijesne promjene.
+
+### Zadatak u CSS-u za stvaranje elementa s proizvoljnim vrijednostima
+
+```css
+div {
+  border: none;
+  padding: 50px;
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+```
+
+### Zadatak u JS-u za definiranje funkcije koja vraća veći broj
+
+```js
+function veciBroj(a, b) {
+  if (a >= b) {
+    return a;
+  } else {
+    return b;
+  }
+}
+```
+
+### Zadatak za ispis trenutne godine u element s nekim ID-jem
+
+```js
+document.getElementById('elementID').innerText = new Date().getFullYear();
+```
+
+### Naredba za instalaciju paketa `algebra-library` i uređivanje `package.json`
+
+```sh
+npm install algebra-library --save
+```
+
+### Primjer za ubacivanje props u komponentu
+
+```jsx
+<MyComponent propName={propValue} />
+```
+
+### True/False - Child komponenta može mijenjati parent komponentu
+
+False.
+
+### True/False - Ne smijemo imati više elemenata u dokumentu
+
+False. (Možemo imati više elemenata, npr. `div`, `p`, `section`, itd.)
